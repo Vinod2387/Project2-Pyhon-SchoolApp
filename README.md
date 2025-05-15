@@ -48,4 +48,6 @@ black .
 ## Test
 ```base
 python manage.py test
+
+ChatGPT: https://chatgpt.com/share/682578a8-5924-8012-8bb5-58918e00831c
 ```
