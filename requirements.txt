@@ -18,3 +18,5 @@ regex==2021.7.6
 sqlparse==0.4.2
 tomli==1.0.4
 pytest==7.4.0
+pytest-django>=4.5.2
+

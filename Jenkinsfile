@@ -13,7 +13,7 @@ pipeline {
                 sh '''
                     python3 -m venv venv
                     . venv/bin/activate
-                    pip install -r requirements.txt
+                    pip install --break-system-packages -r requirements.txt
                 '''
             }
         }
@@ -28,10 +28,14 @@ pipeline {
         // }
 
         stage('Unit Tests') {
-            steps {
-                sh 'source venv/bin/activate && pytest'
+           steps {
+             sh '''
+                . venv/bin/activate
+                export DJANGO_SETTINGS_MODULE=schoolapp.settings
+                pytest
+             '''
             }
-        }
+        } 
 
         stage('Build Package') {
             steps {
