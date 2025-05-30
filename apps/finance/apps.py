@@ -5,4 +5,4 @@ class FinanceConfig(AppConfig):
     name = "apps.finance"
 
     def ready(self):
-        import apps.finance.signals
+        pass

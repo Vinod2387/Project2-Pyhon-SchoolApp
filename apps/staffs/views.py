@@ -1,6 +1,5 @@
 from django.contrib.messages.views import SuccessMessageMixin
 from django.forms import widgets
-from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views.generic import DetailView, ListView
 from django.views.generic.edit import CreateView, DeleteView, UpdateView
