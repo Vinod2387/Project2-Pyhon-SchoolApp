@@ -30,14 +30,7 @@ When you run migrate, a superuser is created.
 username: admin
 password: admin123
 ```
-
-## Roadmap
-To build a fully fledged open source school management.
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
+Note: Please make sure to update tests as appropriate.
 
 ## Coding Standards
 ```bash
@@ -49,5 +42,4 @@ black .
 ```base
 python manage.py test
 
-ChatGPT: https://chatgpt.com/share/682578a8-5924-8012-8bb5-58918e00831c
 ```
